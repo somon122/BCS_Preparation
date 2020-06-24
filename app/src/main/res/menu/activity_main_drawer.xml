@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_liveExam"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_liveExam" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_practice" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_pdf" />
+
+        <item
+            android:id="@+id/nav_PDF"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_pdf" />
+
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_pdf" />
+
+        <item
+            android:id="@+id/nav_comment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_pdf" />
+    </group>
+
+    <item android:title="@string/menu_communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_privacyPolicy"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/menu_privacy_policy" />
+
+            <item
+                android:id="@+id/nav_rules"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/menu_direction" />
+
+            <item
+                android:id="@+id/nav_Help"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/menu_help_center" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/menu_rate_us" />
+            <item
+                android:id="@+id/nav_exits"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/menu_exits" />
+        </menu>
+    </item>
+
+
+</menu>

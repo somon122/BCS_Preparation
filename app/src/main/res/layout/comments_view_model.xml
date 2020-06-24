@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/commentsUserName_id"
+                android:gravity="start"
+                android:text="@string/name"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="28dp"/>
+
+            <TextView
+                android:id="@+id/commentsDate_id"
+                android:gravity="start"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="@string/date"
+                android:textColor="@color/colorBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="28dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/commentsDescription_id"
+            android:padding="5dp"
+            android:gravity="start"
+            android:text="@string/commentsname"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/commentsRead_id"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="@string/view"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
