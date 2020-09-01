@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#232323">
+
+
+    <Button
+        android:id="@+id/filterAllSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="start"
+        android:padding="5dp"
+        android:onClick="filter"
+        android:layout_margin="10dp"
+        android:text="All subject"
+        android:textAllCaps="false"
+        android:background="#00B0FF"
+        android:textColor="#FFFDFD"
+        app:layout_constraintEnd_toStartOf="@+id/filterCancel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/filterCancel"
+        android:layout_width="30dp"
+        android:gravity="center"
+        android:layout_height="30dp"
+        android:textSize="17sp"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        android:text="X"
+        android:onClick="filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filterAllSubject">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/filterBiology"
+                android:textSize="17sp"
+                android:text="উদ্ভিদবিজ্ঞান"
+                android:onClick="filter"
+                android:background="@color/colorWhite"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <View
+                android:background="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/filterByZoology"
+                android:textSize="17sp"
+                android:text="প্রাণীবিজ্ঞান"
+                android:onClick="filter"
+                android:background="@color/colorWhite"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <View
+                android:background="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <Button
+                android:id="@+id/filterChemistry1"
+                android:textSize="17sp"
+                android:text="রসায়ন প্রথম পত্র"
+                android:onClick="filter"
+                android:background="@color/colorWhite"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <View
+                android:background="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <Button
+                android:id="@+id/filterChemistry2"
+                android:textSize="17sp"
+                android:text="রসায়ন দ্বিতীয় পত্র"
+                android:background="@color/colorWhite"
+                android:textAllCaps="false"
+                android:onClick="filter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <View
+                android:background="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <Button
+                android:id="@+id/filterPhysics1"
+                android:textSize="17sp"
+                android:text="পদার্থবিজ্ঞান প্রথম পত্র"
+                android:background="@color/colorWhite"
+                android:textAllCaps="false"
+                android:onClick="filter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <View
+                android:background="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <Button
+                android:id="@+id/filterPhysics2"
+                android:textSize="17sp"
+                android:text="পদার্থবিজ্ঞান দ্বিতীয় পত্র"
+                android:background="@color/colorWhite"
+                android:textAllCaps="false"
+                android:onClick="filter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <View
+                android:background="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/filterEnglish"
+                android:textSize="17sp"
+                android:text="ইংরেজি"
+                android:background="@color/colorWhite"
+                android:textAllCaps="false"
+                android:onClick="filter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+            <View
+                android:background="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/filterGeneralKnowledge"
+                android:textSize="17sp"
+                android:text="সাধারণ জ্ঞান"
+                android:onClick="filter"
+                android:background="@color/colorWhite"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

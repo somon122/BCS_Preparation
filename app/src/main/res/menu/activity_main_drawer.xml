@@ -5,65 +5,39 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_liveExam"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_liveExam" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_practice" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_pdf" />
+            android:id="@+id/nav_privacyPolicy"
+            android:icon="@drawable/policy"
+            android:title="@string/menu_privacy_policy" />
 
         <item
-            android:id="@+id/nav_PDF"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_pdf" />
+            android:id="@+id/nav_rules"
+            android:icon="@drawable/directions"
+            android:title="@string/menu_direction" />
 
         <item
-            android:id="@+id/nav_video"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_pdf" />
+            android:id="@+id/nav_Help"
+            android:icon="@drawable/help"
+            android:title="@string/menu_help_center" />
 
         <item
-            android:id="@+id/nav_comment"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_pdf" />
+            android:id="@+id/nav_share"
+            android:icon="@drawable/share_24"
+            android:title="@string/menu_share" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/send"
+            android:title="@string/menu_rate_us" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/exit"
+            android:title="লগ আউট" />
+        <item
+            android:id="@+id/nav_exits"
+            android:icon="@drawable/close"
+            android:title="@string/menu_exits" />
+
     </group>
-
-    <item android:title="@string/menu_communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_privacyPolicy"
-                android:icon="@drawable/ic_menu_camera"
-                android:title="@string/menu_privacy_policy" />
-
-            <item
-                android:id="@+id/nav_rules"
-                android:icon="@drawable/ic_menu_camera"
-                android:title="@string/menu_direction" />
-
-            <item
-                android:id="@+id/nav_Help"
-                android:icon="@drawable/ic_menu_camera"
-                android:title="@string/menu_help_center" />
-
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_camera"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_camera"
-                android:title="@string/menu_rate_us" />
-            <item
-                android:id="@+id/nav_exits"
-                android:icon="@drawable/ic_menu_camera"
-                android:title="@string/menu_exits" />
-        </menu>
-    </item>
 
 
 </menu>

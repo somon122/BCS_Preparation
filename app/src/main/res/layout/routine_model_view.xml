@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:padding="3dp"
+    app:cardCornerRadius="5dp"
+    android:background="@color/colorWhite">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textStyle="italic"
+                android:singleLine="true"
+                android:text="বিষয়ঃ "
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/routineSubject_id"
+                android:layout_width="0dp"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textStyle="italic"
+                android:text="Status: "
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/routineStatus_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="italic|bold"
+                android:layout_weight="2"
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textStyle="italic"
+                android:text="তারিখ: "
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/routineDate_id"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="italic"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+               />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout5555"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <Button
+                android:id="@+id/routineSourceShow_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="সিলেবাস"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorBlack"
+                android:textAllCaps="false"
+
+                />
+
+            <Button
+                android:id="@+id/routineEnterExam_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/play"
+                android:background="@color/colorWhite"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textStyle="italic|bold"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:textColor="#FA0202"
+                android:text="পরীক্ষা দিন"
+                android:textAllCaps="false"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/routineSourceDetails_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"
+            android:padding="3dp"
+            android:text="Source"
+            android:textStyle="italic"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5555" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

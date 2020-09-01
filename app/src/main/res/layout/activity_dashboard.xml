@@ -1,9 +1,425 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".userProfileSection.DashboardActivity">
 
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/dashBoardToolBar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/profileUpdateButton_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="17sp"
+        android:layout_marginEnd="5dp"
+        android:text="আপডেট প্রোফাইল"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/dashBoardToolBar_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dashBoardToolBar_id" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashBoardToolBar_id">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:text="userId"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:id="@+id/profileUserId"
+                        android:text="75865"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Name"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:id="@+id/profileUserName_id"
+                        android:text="Mr. Karim"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card2">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Email"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:id="@+id/profileUserEmail_id"
+                        android:text="somon12230327@gmail.com"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card3">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Number"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:id="@+id/profileUserNumber"
+                        android:text="0182*******"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card4">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="SSC Result"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:id="@+id/profileSSC_GPA_id"
+                        android:text="GPA-5"
+
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card5">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="HSC Result"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:id="@+id/profileHSC_GPA_id"
+                        android:text="GPA-5"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card6">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="results"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:id="@+id/profileResults_id"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+ <androidx.cardview.widget.CardView
+                android:id="@+id/card8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card7">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="College Name"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:id="@+id/profileCollegeName_id"
+                        android:text="Dhaka College"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card8">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Blood Group"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:id="@+id/profileBloodGroup"
+                        android:text="A+"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="2dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card9">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:paddingStart="5dp"
+                        android:text="Present Address"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/profileAddress_id"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:paddingStart="5dp"
+                        android:text="Savar Dhaka"
+                        android:textColor="@color/colorBlack" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:icon="@drawable/home"
+        android:id="@+id/bottomHome_id"
+        android:orderInCategory="100"
+        android:title="হোম"
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/person"
+        android:id="@+id/bottomProfile_id"
+        android:orderInCategory="100"
+        android:title="প্রোফাইল"
+        app:showAsAction="always" />
+
+
+
+    <item
+        android:id="@+id/bottom_summary_id"
+        android:icon="@drawable/summary"
+        android:title="সামারি"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/bottom_Comment_id"
+        android:icon="@drawable/comment"
+        android:orderInCategory="100"
+        android:title="কমেন্টস"
+        app:showAsAction="always" />
+</menu>

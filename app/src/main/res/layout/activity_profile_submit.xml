@@ -1,9 +1,292 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".userProfileSection.ProfileSubmitActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/editProfileToolBar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileToolBar_id">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <EditText
+                android:id="@+id/editProfileUserName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:paddingStart="5dp"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="10dp"
+                android:background="@drawable/strock_design"
+                android:hint="নাম"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editProfileUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:hint="ইমেল"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileUserName" />
+
+            <EditText
+                android:id="@+id/editProfileUserNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:hint="মোবাইল নাম্বার"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileUserEmail" />
+
+            <EditText
+                android:id="@+id/editProfileUserPassword_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:hint="পাসওয়ার্ড"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileUserNumber" />
+            <EditText
+                android:id="@+id/editProfileConfirmPassword_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:hint="কনফার্ম পাসওয়ার্ড"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileUserPassword_id" />
+
+            <Spinner
+                android:id="@+id/editProfileStudentCategorySpinner_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:paddingStart="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileConfirmPassword_id" />
+
+            <EditText
+                android:id="@+id/editProfileUserClgName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/college"
+                android:drawablePadding="10dp"
+                android:hint="কলেজের নাম"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileStudentCategorySpinner_id" />
+
+            <EditText
+                android:id="@+id/editProfileHSCRoll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:drawableLeft="@drawable/roll"
+                android:drawablePadding="10dp"
+                android:hint="এইচএসসি রোল"
+                android:inputType="number"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileUserClgName" />
+            <EditText
+                android:id="@+id/editProfileHSCGPA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:drawableLeft="@drawable/roll"
+                android:drawablePadding="10dp"
+                android:hint="এইচএসসি জিপিএ"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileHSCRoll" />
+
+            <EditText
+                android:id="@+id/editProfileSchoolName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/college"
+                android:drawablePadding="10dp"
+                android:hint="স্কুলের নাম"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileHSCGPA" />
+
+            <EditText
+                android:id="@+id/editProfileSSCRoll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:drawableLeft="@drawable/roll"
+                android:drawablePadding="10dp"
+                android:hint="এসএসসি রোল"
+                android:inputType="number"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileSchoolName" />
+            <EditText
+                android:id="@+id/editProfileSSC_GPA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:drawableLeft="@drawable/roll"
+                android:drawablePadding="10dp"
+                android:hint="এসএসসি জিপিএ"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileSSCRoll" />
+
+            <EditText
+                android:id="@+id/editProfileRegNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/roll"
+                android:drawablePadding="10dp"
+                android:hint="রেজিস্ট্রেশন নম্বর"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:inputType="number"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileSSC_GPA" />
+
+            <Spinner
+                android:id="@+id/editProfileBloodGroupsNamesSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:paddingStart="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileRegNo" />
+
+
+
+
+            <EditText
+                android:id="@+id/editProfileAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/home"
+                android:drawablePadding="10dp"
+                android:hint="ঠিকানা"
+                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileBloodGroupsNamesSpinner" />
+
+            <Button
+                android:id="@+id/editProfileSubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:background="#E90CBAEF"
+                android:text="তথ্য জমা দিন"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileAddress"
+                app:layout_constraintVertical_bias="0.28" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
