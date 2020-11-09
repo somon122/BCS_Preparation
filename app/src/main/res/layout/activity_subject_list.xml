@@ -19,6 +19,7 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/subjectivePracticeSectionToolBar_id"
             android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

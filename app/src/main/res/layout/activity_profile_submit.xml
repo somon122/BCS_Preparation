@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,23 +7,23 @@
     tools:context=".userProfileSection.ProfileSubmitActivity">
 
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/editProfileToolBar_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/editProfileToolBar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editProfileToolBar_id">
 
 
@@ -39,12 +38,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
-                android:paddingStart="5dp"
+                android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/name"
                 android:drawablePadding="10dp"
-                android:background="@drawable/strock_design"
                 android:hint="নাম"
                 android:inputType="textPersonName"
+                android:paddingStart="5dp"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.555"
@@ -56,58 +55,91 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
+                android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/email"
                 android:drawablePadding="10dp"
-                android:paddingStart="5dp"
-                android:background="@drawable/strock_design"
                 android:hint="ইমেল"
                 android:inputType="textEmailAddress"
+                android:paddingStart="5dp"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editProfileUserName" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutProfileImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileUserEmail"
+               >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/person" />
+
+                <Button
+                    android:id="@+id/picProfileImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:text="Choose Image" />
+
+
+            </LinearLayout>
+
 
             <EditText
                 android:id="@+id/editProfileUserNumber"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
+                android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/phone"
                 android:drawablePadding="10dp"
                 android:hint="মোবাইল নাম্বার"
                 android:paddingStart="5dp"
-                android:background="@drawable/strock_design"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editProfileUserEmail" />
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutProfileImage" />
 
             <EditText
                 android:id="@+id/editProfileUserPassword_id"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
+                android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/password"
                 android:drawablePadding="10dp"
-                android:inputType="textPassword"
                 android:hint="পাসওয়ার্ড"
+                android:inputType="textPassword"
                 android:paddingStart="5dp"
-                android:background="@drawable/strock_design"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editProfileUserNumber" />
+
             <EditText
                 android:id="@+id/editProfileConfirmPassword_id"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
+                android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/password"
                 android:drawablePadding="10dp"
                 android:hint="কনফার্ম পাসওয়ার্ড"
                 android:inputType="textPassword"
                 android:paddingStart="5dp"
-                android:background="@drawable/strock_design"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -128,12 +160,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
+                android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/college"
                 android:drawablePadding="10dp"
                 android:hint="কলেজের নাম"
-                android:paddingStart="5dp"
-                android:background="@drawable/strock_design"
                 android:inputType="textPersonName"
+                android:paddingStart="5dp"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.555"
@@ -145,27 +177,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
-                android:paddingStart="5dp"
                 android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/roll"
                 android:drawablePadding="10dp"
                 android:hint="এইচএসসি রোল"
                 android:inputType="number"
+                android:paddingStart="5dp"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editProfileUserClgName" />
+
             <EditText
                 android:id="@+id/editProfileHSCGPA"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
-                android:paddingStart="5dp"
                 android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/roll"
                 android:drawablePadding="10dp"
                 android:hint="এইচএসসি জিপিএ"
                 android:inputType="numberDecimal"
+                android:paddingStart="5dp"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -176,12 +209,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
+                android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/college"
                 android:drawablePadding="10dp"
                 android:hint="স্কুলের নাম"
-                android:paddingStart="5dp"
-                android:background="@drawable/strock_design"
                 android:inputType="textPersonName"
+                android:paddingStart="5dp"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -192,27 +225,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
-                android:paddingStart="5dp"
                 android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/roll"
                 android:drawablePadding="10dp"
                 android:hint="এসএসসি রোল"
                 android:inputType="number"
+                android:paddingStart="5dp"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editProfileSchoolName" />
+
             <EditText
                 android:id="@+id/editProfileSSC_GPA"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
-                android:paddingStart="5dp"
                 android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/roll"
                 android:drawablePadding="10dp"
                 android:hint="এসএসসি জিপিএ"
                 android:inputType="numberDecimal"
+                android:paddingStart="5dp"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -223,12 +257,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
+                android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/roll"
                 android:drawablePadding="10dp"
                 android:hint="রেজিস্ট্রেশন নম্বর"
-                android:paddingStart="5dp"
-                android:background="@drawable/strock_design"
                 android:inputType="number"
+                android:paddingStart="5dp"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -246,19 +280,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/editProfileRegNo" />
 
 
-
-
             <EditText
                 android:id="@+id/editProfileAddress"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
+                android:background="@drawable/strock_design"
                 android:drawableLeft="@drawable/home"
                 android:drawablePadding="10dp"
                 android:hint="ঠিকানা"
-                android:paddingStart="5dp"
-                android:background="@drawable/strock_design"
                 android:inputType="text"
+                android:paddingStart="5dp"
                 android:textColor="@color/colorBlack"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -285,8 +317,6 @@
 
 
     </ScrollView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

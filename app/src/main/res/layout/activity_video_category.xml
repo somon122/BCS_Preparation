@@ -7,23 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".videoSection.VideoCategoryActivity">
 
-<com.google.android.material.appbar.AppBarLayout
-    android:id="@+id/AppBarLayout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:theme="@style/AppTheme.AppBarOverlay"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    >
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/videoToolBar_id"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        android:layout_width="match_parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-</com.google.android.material.appbar.AppBarLayout>
+
 
 
     <ScrollView
@@ -33,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/AppBarLayout">
+        app:layout_constraintTop_toBottomOf="@id/videoToolBar_id">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
